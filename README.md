@@ -40,7 +40,7 @@ private func connectToDB() {
 
 - ## Get all data
 ```
-func getAppNotes()->[Note] {
+func getAllData()->[Note] {
        var statement:OpaquePointer!
        if sqlite3_prepare_v2(database, "SELECT rowid,contents FROM tablename", -1, &statement, nil) != SQLITE_OK {
            print("Could not create query")
