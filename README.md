@@ -74,7 +74,7 @@ func getAllData()->[Note] {
       }
 ```
 
-- ## Delete Rows
+- ## Delete Row
 ```
 func deleteRow(note:Note) {
     var statement:OpaquePointer!
